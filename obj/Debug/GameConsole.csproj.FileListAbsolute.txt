@@ -1,0 +1,7 @@
+C:\Users\Alex\source\repos\GameConsole\GameConsole\obj\Debug\GameConsole.csprojAssemblyReference.cache
+C:\Users\Alex\source\repos\GameConsole\GameConsole\obj\Debug\GameConsole.csproj.CoreCompileInputs.cache
+C:\Users\Alex\source\repos\GameConsole\GameConsole\bin\Debug\GameConsole.exe.config
+C:\Users\Alex\source\repos\GameConsole\GameConsole\bin\Debug\GameConsole.exe
+C:\Users\Alex\source\repos\GameConsole\GameConsole\bin\Debug\GameConsole.pdb
+C:\Users\Alex\source\repos\GameConsole\GameConsole\obj\Debug\GameConsole.exe
+C:\Users\Alex\source\repos\GameConsole\GameConsole\obj\Debug\GameConsole.pdb
