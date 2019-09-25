@@ -13,8 +13,13 @@ namespace GameConsole
             if (isComputer)
             {
                 this.Type = "Computer";
+                this.IsComputer = isComputer;
             }
-            else this.Type = "Player";
+            else
+            { 
+                this.Type = "Player";
+                this.IsComputer = isComputer;
+            }
         }
 
 

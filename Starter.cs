@@ -11,9 +11,7 @@ namespace GameConsole
         public void Start(Player player, Player computer)
         {
             player.Health = 100;
-            player.IsComputer = false;
             computer.Health = 100;
-            computer.IsComputer = true;
 
             double check = 0;
             double move = 0;
