@@ -32,7 +32,6 @@ namespace GameConsole
                         computer.Action(player, computer, check);
                     }
                     else computer.Action(player, computer, check);
-
                 }
                 Console.WriteLine("Move is over");
                 Console.WriteLine("Player health: " + player.Health + ". Computer health: " + computer.Health + ".");
