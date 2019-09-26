@@ -10,15 +10,12 @@ namespace GameConsole
     {
         public void Start(Player player, Player computer)
         {
-            player.Health = 100;
-            computer.Health = 100;
-
-            double check = 0;
-            double move = 0;
+            double check = 0;// Defines which skill be used by object(player or computer)
+            double move = 0; // Defines who makes next move
             Random random = new Random();
             do
             {
-                Console.WriteLine("New turn");
+                Console.WriteLine("New move");
                 move = random.Next(1, 100);
                 if(move < 50)
                 {
@@ -28,16 +25,16 @@ namespace GameConsole
                 if(move >= 50)
                 {
                     check = random.Next(1, 100);
-                    if(check >= 30 && computer.Health <= 35)
+                    if(check >= 30 &&
+                        computer.Health <= (computer.MaxHealth * 35) / 100) // If computer health < 35%, increase chance of heal
                     {
-                        check = check / 0.2;
+                        check = check / 0.3; // Increasing chance of heal
                         computer.Action(player, computer, check);
                     }
                     else computer.Action(player, computer, check);
 
                 }
-
-                Console.WriteLine("Turn is over");
+                Console.WriteLine("Move is over");
                 Console.WriteLine("Player health: " + player.Health + ". Computer health: " + computer.Health + ".");
                 Console.WriteLine("------");
                 move = 0;
